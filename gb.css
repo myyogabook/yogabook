@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    }
+    
+    :root{
+        background-image: url("file:///C:/Users/user/Desktop/yogabook/theyogabook.com/bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        --nav-color: #1876F2;
+        --bg-color: #fff;
+        --text-color: #000;
+    
+    }
+    .dark-theme{
+        --body-color: #0a0a0a;
+        --nav-color: #000;
+        --bg-color: #000;
+        --text-color: #fff;
+    }
+    
+    body{
+        background: var(--body-color);
+        transition: background 0.3s;
+    }
+    .nav-left h1{
+        color: white;
+    }
+    .fo{
+        color: #7b3106;
+    }

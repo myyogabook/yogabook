@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+  }
+  body{
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background-image: url("https://raw.githubusercontent.com/theyogabook/theyogabook.com/main/gif%20back.gif");
+    position: fixed;
+  }
+  
+.medi{
+  margin-left: 50px;
+  margin-top: 20px;
+}

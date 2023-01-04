@@ -1,0 +1,90 @@
+{
+  "project_info": {
+    "project_number": "473190704824",
+    "project_id": "yogabook-a41c2",
+    "storage_bucket": "yogabook-a41c2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473190704824:android:6b592568adeab14bd8764d",
+        "android_client_info": {
+          "package_name": "com.healthbook.yogabook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473190704824-qut0kncilvgiki0v3eu761b0300s2uls.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsuVAvRVRpDhHT3HYcPFZZIQWWOPnYh78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473190704824-qut0kncilvgiki0v3eu761b0300s2uls.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
+
+
+buildscript {
+  repositories {
+    // Make sure that you have the following two repositories
+    google()  // Google's Maven repository
+
+    mavenCentral()  // Maven Central repository
+
+  }
+  dependencies {
+    ...
+    // Add the dependency for the Google services Gradle plugin
+    classpath 'com.google.gms:google-services:4.3.13'
+
+  }
+}
+
+allprojects {
+  ...
+  repositories {
+    // Make sure that you have the following two repositories
+    google()  // Google's Maven repository
+
+    mavenCentral()  // Maven Central repository
+
+  }
+}
+
+plugins {
+  id 'com.android.application'
+
+  // Add the Google services Gradle plugin
+  id 'com.google.gms.google-services'
+
+  ...
+}
+
+dependencies {
+  // Import the Firebase BoM
+  implementation platform('com.google.firebase:firebase-bom:30.4.1')
+
+
+  // TODO: Add the dependencies for Firebase products you want to use
+  // When using the BoM, don't specify versions in Firebase dependencies
+  implementation 'com.google.firebase:firebase-analytics'
+
+
+  // Add the dependencies for any other desired Firebase products
+  // https://firebase.google.com/docs/android/setup#available-libraries
+}

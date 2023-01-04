@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WASTE PICKUP</title>
+        
+    <body>
+        <style>
+            input[type=text], select {
+              width: 100%;
+              padding: 12px 20px;
+              margin: 8px 0;
+              display: inline-block;
+              border: 1px solid #ccc;
+              border-radius: 4px;
+              box-sizing: border-box;
+            }
+            input[type=submit] {
+              width: 100%;
+              background-color: #4CAF50;
+              color: white;
+              padding: 14px 20px;
+              margin: 8px 0;
+              border: none;
+              border-radius: 4px;
+              cursor: pointer;
+              
+            }
+            input[type=submit]:hover {
+              background-color: #45a049;
+            }
+            div {
+              border-radius: 5px;
+              background-color: #f2f2f2;
+              padding: 20px;
+            }
+            </style>
+            <body>
+            <h3>MY ACCOUNT</h3>
+            <div>
+              <form action="/action_page.php">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name">
+            
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                  <option value="">India</option>
+                </select>
+                <label for="state">State</label>
+                <select id="country" name="country">
+                  <option value="">Uttar Pradesh</option>
+                  <option value="">Delhi</option>
+                  <option value="">Madhya Pradesh</option>
+                  <option value="">Rajesthan</option>
+                  <option value="">Maharashtra</option>
+                  <option value="">Tamil nadu</option>
+                  <option value="">Chandigarh</option>
+                  <option value="">West Bengal</option>
+                  <option value="">Uttrakhand</option>
+                </select>
+                <label for="lname">Address</label>
+                <input type="text" id="lname" name="lastname" placeholder="Address">
+                <label for="lname">Pincode</label>
+                <input type="text" id="lname" name="lastname" placeholder="Pincode">
+                <label for="lname">Phone Number</label>
+                <input type="text" id="lname" name="lastname" placeholder="Phone number">
+                <label for="lname">E-Mail</label>
+                <input type="text" id="lname" name="lastname" placeholder="Email">
+                <label for="state">Service Details</label>
+                <select id="country" name="country">
+                  <option value="">One-time or Temporary disposal service</option>
+                  <option value="">Regular Recycling service</option>
+                  <option value="">Regular Waste Disposal and Recycling service</option>
+                  <option value="">Regular Waste Disposal</option>
+                  <option value="">Other</option></select>
+                <label for="state">Payment Method</label>
+                <select id="country" name="country">
+                  <option value="">Cash</option>
+                  <option value="">UPI</option>
+                  <option value="">Online Payment</option>
+                <script>
+                    function disableSubmit() {
+                     document.getElementById("submit").disabled = true;
+                    }
+                     function activateButton(element) {
+                         if(element.checked) {
+                           document.getElementById("submit").disabled = true;
+                          }
+                          else  {
+                           document.getElementById("submit").disabled = false;
+                         }
+                     }
+                   </script>
+                   <body onload="disableSubmit()">
+                    <input type="checkbox" name="terms" id="terms" onchange="activateButton(this)">  I Agree to the WASTE PICKUP <a href="terms.html"><u>Terms Of Service</u></a> And <a href="terms.html"><u>Privacy Policy</u></a>. 
+                   <br>
+        <input type="submit" value="Submit">
+        </form>
+     </div>
+    </body>
+</head>
+    </html>
